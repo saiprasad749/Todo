@@ -55,6 +55,8 @@ class Note{
     map['description'] = _description;
     map['priority'] = _priority;
     map['date'] = _date;
+
+    return map;
   }
 
     Note.fromMapObject(Map<String,dynamic> map){
