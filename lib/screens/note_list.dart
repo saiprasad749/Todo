@@ -39,6 +39,8 @@ class _NoteListState extends State<NoteList> {
     );
   }
 
+  
+
   ListView getNoteListView(){
     return ListView.builder(
       itemCount: count,
@@ -71,6 +73,9 @@ class _NoteListState extends State<NoteList> {
                 navigateToDetail(this.noteList[position], 'Edit Todo');
                 },
             ),
+            onTap: (){
+              navigateToDetail(this.noteList[position], 'Edit Todo');
+            },
           ),
         );
       },
